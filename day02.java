@@ -125,8 +125,78 @@ class Day02 {
         System.out.println("None"); break;}
     scanner.close();
     */
+    /*
+    반복문 for 문
+    for(start; stop condition; step)
+    */
+    /*
+    for(int a = 3; a < 10; ++a){ // 이런식으로 step을 이용가능 
+      System.out.println(a);
+    }
+    for(int a = 0, b =0; a < 10; a++, b++){  
+      System.out.println(a+b+"");
+    }
+    for (int a =0; ; a++){} // for문 에서 무한루프 
+    for(;;) //-> while(True)느낌 무한루프 
+    */
+    /*
+    //for each 
+    //String name ="홍길동";
+    String[] names ={"홍길동","이몽룡"};
+    int[] nums={1,2,3,4,5};
+    for(String name: names){
+      System.out.println(name);
+    }
+    */
+    /* // for -1
+    int sum=0;
+    for(int a =0; a<1000; a+=3){
+      sum += a;
+    }
+    System.out.println(sum);
+    */
+    /* 별찍기
+    for(int i=1;i<6;i++){
+	    for(int j=0;j<i;j++){
+		    System.out.print("*");
+	    }
+	  System.out.println("");
+    }
+    */
+    /* 역방향
+    for(int i=5;i>0;i--){
+	    for(int j=0;j<i;j++){
+		    System.out.print("*");
+	    }
+	  System.out.println("");
+    }
+    */
+    /* 별찍기 정삼각형
+    for(int i=1;i<=5;i++){
+	    for(int j=1;j<5-i+1;j++){
+		    System.out.print(" "); 
+	    }
+	    for(int x=1;x<=2*i-1;x++){
+		    System.out.print("*"); 
+	    }
+	  System.out.println("");
+    } 
+    */
+    /*
+    int[] nums={70,60,55,75,95,90,80,85,100};
+    int max = nums[0];
+    int min = nums[0];
+    for(int num: nums){
+      if (num > max){
+        max = num;
+      }
     
-  
-    
+      if (min > num){
+        min = num;
+      }
+    }
+    System.out.println(max);
+    System.out.println(min);
+    */
   }
 }
